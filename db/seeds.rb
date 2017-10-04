@@ -14,4 +14,9 @@ c1 = Comment.create!(body: "I agree sir", user: "rubyHater", email:"rubyHater@ho
 c2 = Comment.create!(body: "I disagree sir", user: "rubyLover", email:"rubyLover@hotmail.com", 
 	img_link: "http://www.agta.org/gemstones/images/ruby.jpg", post_id: p1.id)
 
+
+p2 = Post.create!(title: "why I Ruby", user: "davy", email: "davy@tim.co.uk")
+
+c3 = Comment.create!(body: "I disagree sir", user: "rubyLover", email:"rubyLover@hotmail.com", 
+	img_link: "http://www.agta.org/gemstones/images/ruby.jpg", post_id: p2.id)
 puts "Finished seeding..."
