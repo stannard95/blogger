@@ -1,9 +1,8 @@
 <h1><%= @post.title %></h1>
 
-  <%= render @post %>
-  <%= render @post.comments %>
-
-
+  <%= @post.body %>
+  <p>Email: <%= @post.email %></p>
+ 
 <br>
 
 <%= link_to "Edit", edit_post_path(@post) %> |
@@ -11,3 +10,6 @@
 
 <%= link_to "Destroy", @post, method: :delete, data: { confirm: "Are you sure?" } %>
 
+<%= link_to "New comment", new_post_comment_path(@post, @comment)%>
+<p>----------------------------------------------</p>
+ <%= render @post.comments %>

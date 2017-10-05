@@ -2,3 +2,5 @@
 <p>Find me in app/views/comment/show.html.erb</p>
 
 <%= render @comment %>
+
+<%= link_to "Delete comment", post_comment_path, method: :delete, data: { confirm: "Are you sure?"} %>
