@@ -1,12 +1,12 @@
-<p>Title: <%= post.title %></p>
-<p>Body: <%= post.body %></p>
-<p>User: <%= post.user %></p>
 
+<div class="post-container">
+	<p>Title: <%= post.title %></p>
+	<p>Body: <%= post.body %></p>
+	<p>User: <%= post.user %></p>
 
+	<%= link_to "Show Page", post if action_name == "index" %>
+	<%= link_to "Edit Page", edit_post_path(post) %>
 
-<%= link_to "Show Page", post if action_name == "index" %> |
-<%= link_to "Edit Page", edit_post_path(post) %>
-
-<p>----------------------------------------------</p>
+</div>
 
 <br>

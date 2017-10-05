@@ -1,8 +1,11 @@
+
+<div class="comment-container">
 <p>User: <%= comment.user %></p>
 <p>Body: <%= comment.body %></p>
+<p>Image: <%= comment.img_link %></p>
 
 <%= link_to "Show comment", post_comment_path(@post, comment) %>
 <%= link_to "Edit page", edit_post_comment_path(@post, comment) if controller_name == "comments"%>
-<p>-----------------------------------------------</p>
+</div>
 
 
